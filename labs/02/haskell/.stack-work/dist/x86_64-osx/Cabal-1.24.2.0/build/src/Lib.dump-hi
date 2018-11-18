@@ -1,0 +1,95 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-04 18:50:28.611173 UTC
+
+interface haskell-0.1.0.0-3sZntPtYWRACCOMWpD2PDZ:Lib 8002
+  interface hash: ae2b20c94f02ec5eb815a8b50cdd039b
+  ABI hash: dc5caf7de791d410cad3d8d6cf584a36
+  export-list hash: 373a4007fdc23b6231c742e02ea4a313
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.factorial1
+  Lib.factorial2
+  Lib.someFunc
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO c9de64c5f5407c4cf1c52500c4d15200
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+ddb51bdf9089c3d1151ee000c4002ad6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+c37922bec4bb4874ebf50f88f13c08e4
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+5b0426336492494b907ff2401163281a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "haskell-0.1.0.0-3sZntPtYWRACCOMWpD2PDZ"#) -}
+239734ca6db81712273b922d77dee7c5
+  $wfactorial1 :: GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>, Inline: [0] -}
+a6d0cff6bcfe4b663694083b3de8430e
+  $wfactorial2 :: GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+a977566e3aa8ced43226028ed8029161
+  factorial1 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Lib.$wfactorial1 ww1 of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+621157e6eb8f301241a099f9231d3d8e
+  factorial2 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case Lib.$wfactorial2 ww1 of ww2 { DEFAULT ->
+                 GHC.Types.I# ww2 } }) -}
+a14da806dc61ae8b16f1ccd0508a8fd2
+  someFunc :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+349fc2f79d834b8ba60fd2162486b4e8
+  someFunc1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Lib.someFunc2
+                   GHC.Types.True
+                   eta) -}
+c58d818a0ca076de04842dc81054041c
+  someFunc2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "someFunc"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
