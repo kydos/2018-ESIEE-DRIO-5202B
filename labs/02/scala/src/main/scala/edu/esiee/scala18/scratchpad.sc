@@ -72,10 +72,10 @@ loop(5) {
 
 val xs = List(1,2,3,4)
 
-def sum(xs: List[Int]): Int = xs match {
-  case y::ys => y+sum(ys)
-  case List() => 0
-}
+  def sum(xs: List[Int]): Int = xs match {
+    case y::ys => y+sum(ys)
+    case List() => 0
+  }
 
 def mul(xs: List[Int]): Int = xs match {
   case y::ys => y*mul(ys)
